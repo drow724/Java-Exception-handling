@@ -4,7 +4,7 @@ public class Calculator {
 	public Calculator() {
 	}
 	
-	public static int add(int x, int y) throws 천을_넘는_예외, 음수가_되는_예외 {
+	public static int add(int x, int y){
 		
 		int result = x + y;
 		if(result > 1000)
@@ -16,7 +16,7 @@ public class Calculator {
 		return result;
 	}
 
-	public static int sub(int x, int y) throws 음수가_되는_예외 {
+	public static int sub(int x, int y) {
 		int result = x - y;
 
 		if(result < 0)
@@ -31,7 +31,7 @@ public class Calculator {
 	}
 
 	public static int div(int x, int y) {
-		// TODO Auto-generated method stub
+
 		return x/y;
 	}
 

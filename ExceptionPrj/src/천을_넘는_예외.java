@@ -1,5 +1,5 @@
 
-public class 천을_넘는_예외 extends Exception {
+public class 천을_넘는_예외 extends RuntimeException {
 	@Override
 	public String getMessage() {
 		// TODO Auto-generated method stub
