@@ -1,12 +1,17 @@
 
 public class Program {
 	
-	public static void main(String[] args) throws 천을_넘는_예외, 음수가_되는_예외 {
+	public static void main(String[] args) throws 음수가_되는_예외 {
 		Calculator calc = new Calculator();
 //		calc.add();
 // 		인스턴스화 시켜서 사용 Cal클래스 전역 변수를 사용
 		int result = 0;
-		result = Calculator.add(3,-4);
+		try {
+			result = Calculator.add(3,-4);
+		}
+		catch(천을_넘는_예외 e) {
+			System.out.println(e.getMessage());
+		}
 		System.out.printf("add : %d\n", result);
 		result = Calculator.sub(3,4);
 		System.out.printf("sub : %d\n", result);
